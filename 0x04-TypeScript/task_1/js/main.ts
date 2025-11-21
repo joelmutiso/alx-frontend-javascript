@@ -66,3 +66,5 @@ interface printTeacherFunction {
 function printTeacher(firstName:string, lastName:string) {
   return `${firstName.charAt(0)}. ${lastName}`;
 };
+
+console.log(printTeacher("John", "Doe"));
