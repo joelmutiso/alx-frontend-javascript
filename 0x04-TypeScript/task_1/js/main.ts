@@ -42,3 +42,18 @@ const teacher4: Teacher = {
 };
 
 console.log(teacher4);
+
+// interface that extends Teacher
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+const director1: Directors = {
+  firstName: 'John',
+  lastName: 'passo',
+  location: 'London',
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+
+console.log(director1);
