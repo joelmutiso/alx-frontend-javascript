@@ -1,0 +1,13 @@
+# Ignore installed dependencies
+node_modules/
+dist/
+
+# Ignore compiled/bundled output files
+bundle.js
+*.js.map
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+.vscode
