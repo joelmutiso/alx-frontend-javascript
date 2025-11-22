@@ -40,11 +40,15 @@ class Teacher implements TeacherInterface {
 
 // 5. Create the createEmployee function
 // Argument 'salary' can be a number OR a string
-export function createEmployee(salary: number | string): Director | Teacher {
-  if (typeof salary === 'number' && salary < 500) {
-    return new Teacher();
-  }
-  return new Director();
+function createEmployee(salary: number | string): Director | Teacher {
+    if (typeof salary === "number") {
+        if (salary < 500) {
+            return new Teacher();
+        } else {
+            return new Director();
+        }
+    }
+    return new Director();
 }
 
 // --- Test Code (Optional) ---
