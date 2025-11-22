@@ -55,3 +55,20 @@ function createEmployee(salary: number | string): Director | Teacher {
 console.log(createEmployee(200));   // Teacher
 console.log(createEmployee(1000));  // Director
 console.log(createEmployee('$500'));// Director
+
+// 6. Define the Subjects string literal type
+type Subjects = 'Math' | 'History';
+
+// 7. Implement the teachClass function
+export function teachClass(todayClass: Subjects): string {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  }
+  if (todayClass === 'History') {
+    return 'Teaching History';
+  }
+}
+
+// --- Test Cases ---
+console.log(teachClass('Math'));    // Teaching Math
+console.log(teachClass('History')); // Teaching History
