@@ -60,7 +60,7 @@ console.log(createEmployee('$500'));// Director
 type Subjects = 'Math' | 'History';
 
 // 7. Implement the teachClass function
-export function teachClass(todayClass: Subjects): string {
+export function teachClass(todayClass:Subjects): string {
   if (todayClass === 'Math') {
     return 'Teaching Math';
   }
